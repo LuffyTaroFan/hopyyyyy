@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 12.0px 'Helvetica Neue'}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 12.0px 'Geeza Pro'}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 12.0px 'Helvetica Neue'; min-height: 14.0px}
+    span.s1 {font: 12.0px 'Helvetica Neue'}
+    span.s2 {font: 12.0px 'Apple Color Emoji'}
+    span.s3 {font: 12.0px 'Geeza Pro'}
+    span.s4 {font: 12.0px 'Zapf Dingbats'}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;html lang="ar" dir="rtl"&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;head&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;</span>مسابقة<span class="s1"> </span>الزواحف<span class="s1"> </span>التفاعلية<span class="s1">&lt;/title&gt; <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&amp;display=swap" rel="stylesheet"&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg-dark: #0f1f17; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg-card: #182e22; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>--primary-cream: #f4e8d1; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>--accent-green: #9ec640; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>--accent-green-bright: #bce051; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>--text-sub: #b2c4b7; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>--correct: #2e7d32; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>--wrong: #c62828; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>--shadow: 0 10px 30px rgba(0,0,0,0.5); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>* { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-sizing: border-box; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Tajawal', sans-serif; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>body { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: var(--bg-dark); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--primary-cream); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-height: 100vh; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>header { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 800px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 15px 0; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 2px solid var(--accent-green); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 25px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.brand { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.4rem; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 800; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--accent-green); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 10px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.fullscreen-btn { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: transparent; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--accent-green); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--accent-green); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 8px 16px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 8px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: 0.3s; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.fullscreen-btn:hover { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--accent-green); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--bg-dark); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>main { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 800px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex: 1; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.quiz-card { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--bg-card); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 20px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 35px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: var(--shadow); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 2px solid rgba(158, 198, 64, 0.25); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.quiz-meta { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.author-badge { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(158, 198, 64, 0.15); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--accent-green-bright); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 6px 14px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 20px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.95rem; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(158, 198, 64, 0.3); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.quiz-progress { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-sub); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1rem; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.question-text { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.4rem; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 25px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.7; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #ffffff; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.options-grid { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 12px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.opt-btn { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,0.04); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 2px solid rgba(158, 198, 64, 0.3); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--primary-cream); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 16px 20px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 12px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.15rem; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: right; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: all 0.2s ease; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.opt-btn:hover:not(:disabled) { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(158, 198, 64, 0.18); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-color: var(--accent-green); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: translateX(-5px); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.opt-btn.correct { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--correct) !important; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-color: var(--correct) !important; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #fff; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.opt-btn.wrong { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--wrong) !important; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-color: var(--wrong) !important; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #fff; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.explanation-box { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 25px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 18px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(0,0,0,0.35); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 12px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-right: 5px solid var(--accent-green); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.05rem; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.6; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: none; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>animation: fadeIn 0.3s ease-in-out; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes fadeIn { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>from { opacity: 0; transform: translateY(8px); } <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>to { opacity: 1; transform: translateY(0); } <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.controls { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: flex-end; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 25px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.ctrl-btn { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--accent-green); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--bg-dark); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 12px 30px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 30px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.1rem; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 800; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: 0.3s; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.ctrl-btn:hover { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--accent-green-bright); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: scale(1.04); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.score-view { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 40px 20px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.score-badge { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 4rem; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--accent-green); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 800; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 20px 0; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>footer { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 30px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-sub); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.9rem; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;/head&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;body&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="brand"&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span&gt;<span class="s2">❓</span>&lt;/span&gt; <span class="s3">فقرة</span> <span class="s3">التحدي</span> <span class="s3">والأسئلة</span> <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="fullscreen-btn" onclick="toggleFullScreen()"&gt;<span class="s3">شاشة</span> <span class="s3">كاملة</span> ⛶&lt;/button&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;main&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="quiz-card" id="quiz-card"&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Dynamic Content --&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/main&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer&gt; <span class="Apple-converted-space"> </span></p>
+<p dir="rtl" class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span>مجموعة<span class="s1"> </span>أبو<span class="s1"> </span>بكر<span class="s1"> </span>الرازي<span class="s1"> | </span>مادة<span class="s1"> </span>الأحياء<span class="s1"> <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const quizData = [ <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>author: "<span class="s3">ابن</span> <span class="s3">البيطار</span>", <span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>q: "</span>أي<span class="s1"> </span>مما<span class="s1"> </span>يلي<span class="s1"> </span>ليس<span class="s1"> </span>من<span class="s1"> </span>خصائص<span class="s1"> </span>الزواحف؟<span class="s1">", <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>options: [ <span class="Apple-converted-space"> </span></p>
+<p dir="rtl" class="p2"><span class="s1"><span class="Apple-converted-space">          </span>"</span>تستخدم<span class="s1"> </span>عضلات<span class="s1"> </span>القفص<span class="s1"> </span>الصدري<span class="s1"> </span>لسحب<span class="s1"> </span>الهواء<span class="s1">", <span class="Apple-converted-space"> </span></span></p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"<span class="s3">جلد</span> <span class="s3">جاف</span> <span class="s3">وحرشفي</span>", <span class="Apple-converted-space"> </span></p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"<span class="s3">إخصاب</span> <span class="s3">خارجي</span>", <span class="Apple-converted-space"> </span></p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"<span class="s3">انسلاخ</span> <span class="s3">دوري</span> <span class="s3">للجلد</span>" <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>], <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>correct: 2, <span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>exp: "</span><span class="s2">💡</span><span class="s1"> </span>التوضيح<span class="s1">: </span>الإخصاب<span class="s1"> </span>في<span class="s1"> </span>الزواحف<span class="s1"> </span>يكون<span class="s1"> </span>داخلياً<span class="s1"> </span>ويتم<span class="s1"> </span>على<span class="s1"> </span>اليابسة<span class="s1"> </span>وليس<span class="s1"> </span>خارجياً<span class="s1">." <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>}, <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>author: "<span class="s3">ابن</span> <span class="s3">سينا</span>", <span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>q: "</span>الزواحف<span class="s1"> </span>مخلوقات<span class="s1"> </span>ثانوية<span class="s1"> </span>الفم<span class="s1">.", <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>options: ["<span class="s3">صح</span>", "<span class="s3">خطأ</span>"], <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>correct: 0, <span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>exp: "</span><span class="s2">💡</span><span class="s1"> </span>التوضيح<span class="s1">: </span>إجابة<span class="s1"> </span>صحيحة<span class="s1">. </span>ينتمي<span class="s1"> </span>التطور<span class="s1"> </span>الجنيني<span class="s1"> </span>للزواحف<span class="s1"> </span>إلى<span class="s1"> </span>نمط<span class="s1"> </span>ثانوية<span class="s1"> </span>الفم<span class="s1">." <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>}, <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>author: "<span class="s3">ابن</span> <span class="s3">النفيس</span>", <span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>q: "</span>ما<span class="s1"> </span>فائدة<span class="s1"> </span>الحراشف<span class="s1"> </span>والحاجز<span class="s1"> </span>الوقائي<span class="s1"> </span>في<span class="s1"> </span>جلد<span class="s1"> </span>الزواحف؟<span class="s1">", <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>options: [ <span class="Apple-converted-space"> </span></p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"<span class="s3">تقلل</span> <span class="s3">فقدان</span> <span class="s3">السوائل</span>", <span class="Apple-converted-space"> </span></p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"<span class="s3">التنفس</span>", <span class="Apple-converted-space"> </span></p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"<span class="s3">الدفاع</span> <span class="s3">عن</span> <span class="s3">النفس</span>", <span class="Apple-converted-space"> </span></p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"<span class="s3">جميع</span> <span class="s3">ما</span> <span class="s3">سبق</span>" <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>], <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>correct: 0, <span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>exp: "</span><span class="s2">💡</span><span class="s1"> </span>التوضيح<span class="s1">: </span>تعمل<span class="s1"> </span>الحراشف<span class="s1"> </span>كحاجز<span class="s1"> </span>واقٍ<span class="s1"> </span>يقلل<span class="s1"> </span>تسرب<span class="s1"> </span>السوائل<span class="s1"> </span>وحفظ<span class="s1"> </span>الماء<span class="s1"> </span>داخل<span class="s1"> </span>الجسم<span class="s1">." <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>}, <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>author: "<span class="s3">ابن</span> <span class="s3">البيطار</span>", <span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>q: "</span>يتكون<span class="s1"> </span>قلب<span class="s1"> </span>التمساح<span class="s1"> </span>والقاطور<span class="s1"> </span>من<span class="s1"> 3 </span>حجرات<span class="s1"> </span>بينما<span class="s1"> </span>بقية<span class="s1"> </span>الزواحف<span class="s1"> </span>من<span class="s1"> 4 </span>حجرات<span class="s1">.", <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>options: ["<span class="s3">صح</span>", "<span class="s3">خطأ</span>"], <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>correct: 1, <span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>exp: "</span><span class="s2">💡</span><span class="s1"> </span>التوضيح<span class="s1">: </span>الإجابة<span class="s1"> </span>خطأ<span class="s1">. </span>العكس<span class="s1"> </span>هو<span class="s1"> </span>الصحيح؛<span class="s1"> </span>يتكون<span class="s1"> </span>قلب<span class="s1"> </span>التمساح<span class="s1"> </span>والقاطور<span class="s1"> </span>من<span class="s1"> 4 </span>حجرات<span class="s1"> </span>كاملة<span class="s1"> </span>بينما<span class="s1"> </span>بقية<span class="s1"> </span>الزواحف<span class="s1"> </span>يتكون<span class="s1"> </span>قلبها<span class="s1"> </span>غالباً<span class="s1"> </span>من<span class="s1"> 3 </span>حجرات<span class="s1">." <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>}, <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>author: "<span class="s3">ابن</span> <span class="s3">سينا</span>", <span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>q: "</span>أي<span class="s1"> </span>من<span class="s1"> </span>الرتب<span class="s1"> </span>الآتية<span class="s1"> </span>يملك<span class="s1"> </span>أعضاؤها<span class="s1"> </span>درعاً<span class="s1"> </span>واقياً؟<span class="s1">", <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>options: [ <span class="Apple-converted-space"> </span></p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"<span class="s3">الحرشفيات</span>", <span class="Apple-converted-space"> </span></p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"<span class="s3">السلحفيات</span>", <span class="Apple-converted-space"> </span></p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"<span class="s3">خطمية</span> <span class="s3">الرأس</span>", <span class="Apple-converted-space"> </span></p>
+<p dir="rtl" class="p2"><span class="s1"><span class="Apple-converted-space">          </span>"</span>التماسيح<span class="s1"> </span>والقواطر<span class="s1">" <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>], <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>correct: 1, <span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>exp: "</span><span class="s2">💡</span><span class="s1"> </span>التوضيح<span class="s1">: </span>رتبة<span class="s1"> </span>السلحفيات<span class="s1"> </span>تتميز<span class="s1"> </span>بوجود<span class="s1"> </span>درع<span class="s1"> </span>واقٍ<span class="s1"> </span>ملتحم<span class="s1"> </span>بالفقرات<span class="s1"> </span>والأضلاع<span class="s1">." <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>}, <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>author: "<span class="s3">ابن</span> <span class="s3">النفيس</span>", <span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>q: "</span>تستشعر<span class="s1"> </span>الأفعى<span class="s1"> </span>الاهتزازات<span class="s1"> </span>الأرضية<span class="s1"> </span>عن<span class="s1"> </span>طريق<span class="s1"> </span>الغشاء<span class="s1"> </span>الطبلي<span class="s1"> </span>الخارجي<span class="s1"> </span>الذي<span class="s1"> </span>يوجد<span class="s1"> </span>خلف<span class="s1"> </span>العين<span class="s1">.", <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>options: ["<span class="s3">صح</span>", "<span class="s3">خطأ</span>"], <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>correct: 1, <span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>exp: "</span><span class="s2">💡</span><span class="s1"> </span>التوضيح<span class="s1">: </span>الإجابة<span class="s1"> </span>خطأ<span class="s1">. </span>تفتقر<span class="s1"> </span>الأفعى<span class="s1"> </span>لغشاء<span class="s1"> </span>طبلي<span class="s1"> </span>خارجي،<span class="s1"> </span>وتستشعر<span class="s1"> </span>الاهتزازات<span class="s1"> </span>عبر<span class="s1"> </span>عظام<span class="s1"> </span>الفك<span class="s1"> </span>السفلي<span class="s1">." <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>]; <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>let currentQ = 0; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>let score = 0; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>let answered = false; <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function renderQuiz() { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const q = quizData[currentQ]; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const card = document.getElementById('quiz-card'); <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>let optionsHTML = ''; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>q.options.forEach((opt, idx) =&gt; { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>optionsHTML += `&lt;button class="opt-btn" onclick="checkAnswer(${idx})"&gt;${opt}&lt;/button&gt;`; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>}); <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>card.innerHTML = ` <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="quiz-meta"&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="author-badge"&gt;<span class="s2">👤</span> <span class="s3">الفقرة</span>: ${q.author}&lt;/span&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="quiz-progress"&gt;<span class="s3">السؤال</span> ${currentQ + 1} <span class="s3">من</span> ${quizData.length}&lt;/span&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="question-text"&gt;${q.q}&lt;/div&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="options-grid" id="opts-container"&gt;${optionsHTML}&lt;/div&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="explanation-box" id="exp-box"&gt;&lt;/div&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="controls"&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="ctrl-btn" id="next-q-btn" onclick="nextQuestion()" style="display:none;"&gt;<span class="s3">السؤال</span> <span class="s3">التالي</span> <span class="s4">➔</span>&lt;/button&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>`; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>answered = false; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function checkAnswer(selectedIdx) { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>if(answered) return; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>answered = true; <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const q = quizData[currentQ]; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const btns = document.querySelectorAll('#opts-container .opt-btn'); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const expBox = document.getElementById('exp-box'); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const nextBtn = document.getElementById('next-q-btn'); <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>btns.forEach((btn, idx) =&gt; { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>btn.disabled = true; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>if(idx === q.correct) { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>btn.classList.add('correct'); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>if(idx === selectedIdx &amp;&amp; selectedIdx !== q.correct) { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>btn.classList.add('wrong'); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>}); <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>if(selectedIdx === q.correct) { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>score++; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>expBox.innerText = q.exp; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>expBox.style.display = 'block'; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>nextBtn.style.display = 'block'; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function nextQuestion() { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>currentQ++; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>if(currentQ &lt; quizData.length) { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>renderQuiz(); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>} else { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>showFinalScore(); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function showFinalScore() { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const card = document.getElementById('quiz-card'); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>card.innerHTML = ` <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="score-view"&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2&gt;<span class="s3">انتهى</span> <span class="s3">التحدي</span> <span class="s3">بنجاح</span>! <span class="s2">🎉</span>&lt;/h2&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p style="color: var(--text-sub); margin-top: 10px;"&gt;<span class="s3">إليك</span> <span class="s3">النتيجة</span> <span class="s3">النهائية</span> <span class="s3">لجميع</span> <span class="s3">الفقرات</span>:&lt;/p&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="score-badge"&gt;${score} / ${quizData.length}&lt;/div&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="ctrl-btn" onclick="restartQuiz()"&gt;<span class="s3">إعادة</span> <span class="s3">التحدي</span> <span class="s2">🔄</span>&lt;/button&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>`; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function restartQuiz() { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>currentQ = 0; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>score = 0; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>renderQuiz(); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function toggleFullScreen() { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (!document.fullscreenElement) { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.documentElement.requestFullscreen(); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>} else { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (document.exitFullscreen) { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>document.exitFullscreen(); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>renderQuiz(); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;/body&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;/html&gt; <span class="Apple-converted-space"> </span></p>
+</body>
+</html>
